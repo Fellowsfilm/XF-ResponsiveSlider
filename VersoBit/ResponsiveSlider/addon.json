@@ -18,8 +18,8 @@
             "XenForo 2.1.9+"
         ],
         "php": [
-            "7.3.0",
-            "PHP 7.3.0+"
+            "7.2.0",
+            "PHP 7.2.0+"
         ]
     },
     "icon": "fas fa-exchange-alt"

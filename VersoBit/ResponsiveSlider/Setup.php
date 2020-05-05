@@ -23,6 +23,6 @@ class Setup extends AbstractSetup
 
 	public function uninstall()
 	{
-		// TODO: Implement uninstall() method. 
+		// TODO: Implement uninstall() method.
 	}
 }
