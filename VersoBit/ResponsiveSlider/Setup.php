@@ -3,26 +3,28 @@
 namespace VersoBit\ResponsiveSlider;
 
 use XF\AddOn\AbstractSetup;
+use XF\AddOn\StepRunnerInstallTrait;
+use XF\AddOn\StepRunnerUninstallTrait;
+use XF\AddOn\StepRunnerUpgradeTrait;
 
 class Setup extends AbstractSetup
 {
-	public function install()
-	{
-		$this->createWidget('vbResponsiveSlider', 'html', [
-		'positions' => ['forum_overview_top' => 1],
-		'options' => ['advanced_mode' => true,
-				'template_title' => '[VersoBit] Responsive Slider',
-			 ]
-		 ]);
-	}
+	use StepRunnerInstallTrait;
+	use StepRunnerUpgradeTrait;
+	use StepRunnerUninstallTrait;
 
-	public function upgrade()
-	{
-		// TODO: Implement upgrade() method.
-	}
+	public function installStep1()
+    {
+			$this->createWidget('vbResponsiveSlider', 'html', [
+			'positions' => ['forum_overview_top' => 1],
+			'options' => ['advanced_mode' => true,
+					'template_title' => '_widget_vbResponsiveSlider',
+				 ]
+			 ], '[VersoBit] Responsive Slider');
+    }
+  }
 
-	public function uninstall()
-	{
-		// TODO: Implement uninstall() method.
-	}
-}
+  public function uninstallStep1()
+	  {
+			$this->deleteWidget('vbResponsiveSlider');
+		}
