@@ -7,6 +7,6 @@
     "validation_method": "",
     "default_value": "5000",
     "relations": {
-        "vbResponsiveSlider": 4
+        "vbResponsiveSlider": 5
     }
 }

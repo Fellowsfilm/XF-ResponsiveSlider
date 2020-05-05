@@ -5,13 +5,15 @@
   <phrase title="option.vbResponsiveSliderExtraInjection" version_id="10000010" version_string="1.0.0a0"><![CDATA[Enable Custom HTML/CSS Injection]]></phrase>
   <phrase title="option.vbResponsiveSliderPause" version_id="10000010" version_string="1.0.0a0"><![CDATA[Pause automatic transitions on hover.]]></phrase>
   <phrase title="option.vbResponsiveSliderRandomizeSlides" version_id="10000010" version_string="1.0.0a0"><![CDATA[Randomize Slides]]></phrase>
+  <phrase title="option.vbResponsiveSliderStatus" version_id="10000012" version_string="1.0.0a2"><![CDATA[Enable Responsive Slider]]></phrase>
   <phrase title="option.vbResponsiveSliderTransitionDelay" version_id="10000010" version_string="1.0.0a0"><![CDATA[Transition Delay]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderAnimationSpeed" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define how fast in milliseconds slide transitions should take.]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderAutoRotate" version_id="10000010" version_string="1.0.0a0"><![CDATA[Enable or disable the sliders automatic rotation.]]></phrase>
-  <phrase title="option_explain.vbResponsiveSliderExtraInjection" version_id="10000011" version_string="1.0.0a1"><![CDATA[Inject custom CSS/HTML into the slider frame. (useful for banners)</br>
+  <phrase title="option_explain.vbResponsiveSliderExtraInjection" version_id="10000012" version_string="1.0.0a2"><![CDATA[Inject custom CSS/HTML into the slider frame. (useful for fixed position banners)</br>
 <i>Add HTML/CSS to templates: 'vbResponsiveSlider_extra' & 'vbResponsiveSlider_extra.less'</i>]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderPause" version_id="10000010" version_string="1.0.0a0"><![CDATA[Enable or disable automatic transitions on mouse hover.]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderRandomizeSlides" version_id="10000010" version_string="1.0.0a0"><![CDATA[Enable or disable slide randomization.]]></phrase>
+  <phrase title="option_explain.vbResponsiveSliderStatus" version_id="10000012" version_string="1.0.0a2"><![CDATA[Toggle display of the slider.]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderTransitionDelay" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define how long it the slider should wait before transitioning to the next slide. </br><strong>Automatic Rotation must be enabled.</strong>]]></phrase>
   <phrase title="option_group.vbResponsiveSlider" version_id="10000010" version_string="1.0.0a0"><![CDATA[[VersoBit] Responsive Slider]]></phrase>
   <phrase title="option_group_description.vbResponsiveSlider" version_id="10000010" version_string="1.0.0a0"><![CDATA[Contains settings related to generating a slider on your forums landing page.]]></phrase>

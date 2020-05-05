@@ -1,0 +1,1 @@
+Toggle display of the slider.

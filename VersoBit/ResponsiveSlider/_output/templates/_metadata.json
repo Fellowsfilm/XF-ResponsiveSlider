@@ -1,8 +1,8 @@
 {
     "public/_widget_vbResponsiveSlider.html": {
-        "version_id": 10000011,
-        "version_string": "1.0.0a1",
-        "hash": "f6bb25a4fa91b52dc881bc0c065efb13"
+        "version_id": 10000012,
+        "version_string": "1.0.0a2",
+        "hash": "a078f36c122f5f12425f7e32f9f5e72a"
     },
     "public/vbResponsiveSlider.less": {
         "version_id": 10000012,
