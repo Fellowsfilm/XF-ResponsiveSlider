@@ -29,6 +29,12 @@
         "version_string": "1.0.0a0",
         "hash": "64dc6e1007242324a68d9dbdabd941ef"
     },
+    "option.vbResponsiveSliderStatus.txt": {
+        "global_cache": false,
+        "version_id": 10000012,
+        "version_string": "1.0.0a2",
+        "hash": "fd5141a21c78b46c0545a118b91f1c5d"
+    },
     "option.vbResponsiveSliderTransitionDelay.txt": {
         "global_cache": false,
         "version_id": 10000010,
@@ -49,9 +55,9 @@
     },
     "option_explain.vbResponsiveSliderExtraInjection.txt": {
         "global_cache": false,
-        "version_id": 10000011,
-        "version_string": "1.0.0a1",
-        "hash": "dfebfe115be4a921ab957eda657520dd"
+        "version_id": 10000012,
+        "version_string": "1.0.0a2",
+        "hash": "9533d238fe703a95246df24fd0e5db2d"
     },
     "option_explain.vbResponsiveSliderPause.txt": {
         "global_cache": false,
@@ -64,6 +70,12 @@
         "version_id": 10000010,
         "version_string": "1.0.0a0",
         "hash": "1e76beaaff10c5309d4aff9980c227da"
+    },
+    "option_explain.vbResponsiveSliderStatus.txt": {
+        "global_cache": false,
+        "version_id": 10000012,
+        "version_string": "1.0.0a2",
+        "hash": "63341bf83e9015d25b8978f8e51e81dc"
     },
     "option_explain.vbResponsiveSliderTransitionDelay.txt": {
         "global_cache": false,

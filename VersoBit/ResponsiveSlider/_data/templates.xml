@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="public" title="_widget_vbResponsiveSlider" version_id="10000011" version_string="1.0.0a1"><![CDATA[<xf:css src="vbResponsiveSlider.less" />
-<xf:js src="VersoBit/responsiveslides.js" min="true" />
-<xf:js>
-$ (function() { $(".vbRespSlider").responsiveSlides({
-	auto: <xf:if is="$xf.options.vbResponsiveSliderAutoRotate">true<xf:else />false</xf:if>,
-	speed: {$xf.options.vbResponsiveSliderAnimationSpeed},
-	timeout: {$xf.options.vbResponsiveSliderTransitionDelay},
-	random: <xf:if is="$xf.options.vbResponsiveSliderRandomizeSlides">true<xf:else />false</xf:if>,
-	pause: <xf:if is="$xf.options.vbResponsiveSliderPause">true<xf:else />false</xf:if>,
-	pauseControls: true,
-	pager: false,
-	nav: false,
-} ); } );
-</xf:js>
+  <template type="public" title="_widget_vbResponsiveSlider" version_id="10000012" version_string="1.0.0a2"><![CDATA[<xf:if is="$xf.options.vbResponsiveSliderStatus">
+	<xf:css src="vbResponsiveSlider.less" />
+	<xf:js src="VersoBit/responsiveslides.js" min="true" />
+	<xf:js>
+	$ (function() { $(".vbRespSlider").responsiveSlides({
+		auto: <xf:if is="$xf.options.vbResponsiveSliderAutoRotate">true<xf:else />false</xf:if>,
+		speed: {$xf.options.vbResponsiveSliderAnimationSpeed},
+		timeout: {$xf.options.vbResponsiveSliderTransitionDelay},
+		random: <xf:if is="$xf.options.vbResponsiveSliderRandomizeSlides">true<xf:else />false</xf:if>,
+		pause: <xf:if is="$xf.options.vbResponsiveSliderPause">true<xf:else />false</xf:if>,
+		pauseControls: true,
+		pager: false,
+		nav: false,
+	} ); } );
+	</xf:js>
 <div class="vbRespSlider-container">
 	<xf:if is="$xf.options.vbResponsiveSliderExtraInjection">
 		<xf:include template="vbResponsiveSlider_extra" />
@@ -31,8 +32,9 @@ $ (function() { $(".vbRespSlider").responsiveSlides({
 			</a>
 		</li>
     </ul>
-</div>]]></template>
-  <template type="public" title="vbResponsiveSlider.less" version_id="10000011" version_string="1.0.0a1"><![CDATA[.vbRespSlider-container{
+</div>
+</xf:if>]]></template>
+  <template type="public" title="vbResponsiveSlider.less" version_id="10000012" version_string="1.0.0a2"><![CDATA[.vbRespSlider-container{
   margin-bottom: @xf-vbResponsiveSliderCSSContainerMargin;
   position: relative;
   box-shadow: @xf-vbResponsiveSliderCSSBoxShadow;
@@ -83,9 +85,7 @@ $ (function() { $(".vbRespSlider").responsiveSlides({
   -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
   -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
   -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  }
-
-@xf-vbResponsiveSliderCSSExtra;]]></template>
+}]]></template>
   <template type="public" title="vbResponsiveSlider_extra" version_id="10000010" version_string="1.0.0a0"><![CDATA[]]></template>
   <template type="public" title="vbResponsiveSlider_extra.less" version_id="10000011" version_string="1.0.0a1"><![CDATA[]]></template>
 </templates>
