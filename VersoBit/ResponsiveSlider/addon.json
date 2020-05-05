@@ -8,7 +8,19 @@
     "dev_url": "https://versobit.dev/",
     "faq_url": "https://faq.versobit.dev/xf/ResponsiveSlider",
     "support_url": "https://support.versobit.dev/",
-    "extra_urls": [],
-    "require": [],
+    "extra_urls": {
+        "Addon Page": "https://versobit.dev/xf/ResponsiveSlider",
+        "responsiveslides.js GitHub": "https://github.com/viljamis/ResponsiveSlides.js"
+    },
+    "require": {
+        "XF": [
+            2010900,
+            "XenForo 2.1.9+"
+        ],
+        "php": [
+            "7.3.0",
+            "PHP 7.3.0+"
+        ]
+    },
     "icon": "fas fa-exchange-alt"
 }
