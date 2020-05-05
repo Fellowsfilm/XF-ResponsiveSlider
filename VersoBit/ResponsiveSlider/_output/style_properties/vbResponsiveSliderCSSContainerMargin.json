@@ -1,0 +1,13 @@
+{
+    "group_name": "vbResponsiveSlider",
+    "title": "Slider Container Margin Bottom",
+    "description": "Set the margin to your content below the slider container.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "20px",
+    "display_order": 0
+}

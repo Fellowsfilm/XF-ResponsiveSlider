@@ -1,0 +1,13 @@
+{
+    "group_name": "vbResponsiveSlider",
+    "title": "Float Position",
+    "description": "Define the default float position.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "left",
+    "display_order": 0
+}

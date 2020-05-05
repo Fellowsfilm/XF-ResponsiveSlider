@@ -1,0 +1,1 @@
+Inject CSS for Custom HTML as defined in template: 'vbResponsiveSlider_extra'. Must be defined as entire classes, CSS will export to your live site, regardless of settings.

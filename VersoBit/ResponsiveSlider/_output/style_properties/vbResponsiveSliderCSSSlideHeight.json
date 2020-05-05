@@ -1,0 +1,13 @@
+{
+    "group_name": "vbResponsiveSlider",
+    "title": "Slide Height",
+    "description": "Define the slide height for images.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "auto",
+    "display_order": 0
+}

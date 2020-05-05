@@ -1,0 +1,1 @@
+Set the margin to your content below the slider container.

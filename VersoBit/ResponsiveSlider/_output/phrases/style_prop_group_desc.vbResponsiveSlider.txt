@@ -1,0 +1,1 @@
+Control the visual components of the Responsive Slider.

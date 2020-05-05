@@ -1,0 +1,1 @@
+Pause automatic transitions on hover.

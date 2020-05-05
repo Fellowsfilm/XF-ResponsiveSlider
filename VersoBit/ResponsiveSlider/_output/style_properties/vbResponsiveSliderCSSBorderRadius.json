@@ -1,0 +1,13 @@
+{
+    "group_name": "vbResponsiveSlider",
+    "title": "Border Radius",
+    "description": "Set the border radius for the slider.",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "5px",
+    "display_order": 0
+}

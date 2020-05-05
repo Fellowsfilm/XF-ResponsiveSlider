@@ -1,0 +1,1 @@
+Define how fast in milliseconds slide transitions should take.

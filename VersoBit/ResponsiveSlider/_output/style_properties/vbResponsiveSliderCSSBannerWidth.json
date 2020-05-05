@@ -1,0 +1,13 @@
+{
+    "group_name": "vbResponsiveSlider",
+    "title": "Slider Width",
+    "description": "Define the width of the slider",
+    "property_type": "value",
+    "css_components": [],
+    "value_type": "string",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": "100%",
+    "display_order": 0
+}

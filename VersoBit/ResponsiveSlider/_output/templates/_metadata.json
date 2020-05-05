@@ -1,0 +1,12 @@
+{
+    "public/vbResponsiveSlider.less": {
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "e6e41f403d708846b3b71314cc2e499c"
+    },
+    "public/vbResponsiveSlider_extra.html": {
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

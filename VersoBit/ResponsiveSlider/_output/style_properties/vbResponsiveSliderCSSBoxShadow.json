@@ -1,0 +1,17 @@
+{
+    "group_name": "vbResponsiveSlider",
+    "title": "Container Box Shadow",
+    "description": "Define the box shadow for the container.",
+    "property_type": "css",
+    "css_components": [
+        "extra"
+    ],
+    "value_type": "",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": {
+        "extra": "box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.14),\n            0px 2px 2px 0px rgba(0,0,0,0.12),\n            0px 1px 3px 0px rgba(0,0,0,0.20);"
+    },
+    "display_order": 5
+}

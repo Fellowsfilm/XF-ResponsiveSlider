@@ -1,0 +1,1 @@
+Define how long it the slider should wait before transitioning to the next slide. </br><strong>Automatic Rotation must be enabled.</strong>

@@ -1,0 +1,1 @@
+Contains settings related to generating a slider on your forums landing page.

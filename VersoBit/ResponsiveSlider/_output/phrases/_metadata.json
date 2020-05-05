@@ -1,0 +1,182 @@
+{
+    "option.vbResponsiveSliderAnimationSpeed.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "0dc52fcd265149dd09a6d1f5b0e5a3b5"
+    },
+    "option.vbResponsiveSliderAutoRotate.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "3d313b5b5c648709598ebcbda0b65e0f"
+    },
+    "option.vbResponsiveSliderExtraInjection.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "e054726e5d04bc3583a2e2e1e60524ee"
+    },
+    "option.vbResponsiveSliderPause.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "944eff6453fdecfaa58396ce6ba3ffa7"
+    },
+    "option.vbResponsiveSliderRandomizeSlides.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "64dc6e1007242324a68d9dbdabd941ef"
+    },
+    "option.vbResponsiveSliderTransitionDelay.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "f4896ae847910a8b9f98fb30c2dd6e18"
+    },
+    "option_explain.vbResponsiveSliderAnimationSpeed.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "f9543ad8045f2093ccde5a52ecf786c3"
+    },
+    "option_explain.vbResponsiveSliderAutoRotate.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "68a72627d211308b945d96d676b98a2a"
+    },
+    "option_explain.vbResponsiveSliderExtraInjection.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "e24f541d684909a58bfd5a101d61dcb6"
+    },
+    "option_explain.vbResponsiveSliderPause.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "b2bbf3cd3a2d905b081ac59859691587"
+    },
+    "option_explain.vbResponsiveSliderRandomizeSlides.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "1e76beaaff10c5309d4aff9980c227da"
+    },
+    "option_explain.vbResponsiveSliderTransitionDelay.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "30b37d4f79afa617077744e4566a252d"
+    },
+    "option_group.vbResponsiveSlider.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "fc24987dde17b00e559076687df9e506"
+    },
+    "option_group_description.vbResponsiveSlider.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "5c23930d98c7b9b80d17e0996815760f"
+    },
+    "style_prop.vbResponsiveSliderCSSBannerWidth.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "fbda1365f3736b41ac89ecc8c77dd311"
+    },
+    "style_prop.vbResponsiveSliderCSSBorderRadius.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "b80517a37221cf35ccdfb5dfe99e57df"
+    },
+    "style_prop.vbResponsiveSliderCSSBoxShadow.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "ca106b798a5e07cddec989e0c60205c4"
+    },
+    "style_prop.vbResponsiveSliderCSSContainerMargin.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "8e59d2128f453ae54dc9c9c9f834fb12"
+    },
+    "style_prop.vbResponsiveSliderCSSExtra.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "d8e4d1f5e445107e505b2cf63a1fb65c"
+    },
+    "style_prop.vbResponsiveSliderCSSFloatPosition.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "dcb734c83edee0af456683903abe2deb"
+    },
+    "style_prop.vbResponsiveSliderCSSSlideHeight.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "5527c2c1a6f9674d1473fb6eeac5fae3"
+    },
+    "style_prop_desc.vbResponsiveSliderCSSBannerWidth.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "9f3a79da233ab8ead2bb1792738ced5a"
+    },
+    "style_prop_desc.vbResponsiveSliderCSSBorderRadius.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "dbc8447c9f1fc19bdafb2034532eb863"
+    },
+    "style_prop_desc.vbResponsiveSliderCSSBoxShadow.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "8017a0e9ee8aa55625f7651cd00b0ef3"
+    },
+    "style_prop_desc.vbResponsiveSliderCSSContainerMargin.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "61e335a092fd2c78bb837b07afc43744"
+    },
+    "style_prop_desc.vbResponsiveSliderCSSExtra.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "a6f36e244c974c7277fe955afc75d6dc"
+    },
+    "style_prop_desc.vbResponsiveSliderCSSFloatPosition.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "4f4f654a80f851a8d4956859a8ea5cbb"
+    },
+    "style_prop_desc.vbResponsiveSliderCSSSlideHeight.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "dd86db2b6273685d4f870c91e80cd6a7"
+    },
+    "style_prop_group.vbResponsiveSlider.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "fc24987dde17b00e559076687df9e506"
+    },
+    "style_prop_group_desc.vbResponsiveSlider.txt": {
+        "global_cache": false,
+        "version_id": 10000010,
+        "version_string": "1.0.0a0",
+        "hash": "1a1980145079a71104e52145646ba1d6"
+    }
+}
