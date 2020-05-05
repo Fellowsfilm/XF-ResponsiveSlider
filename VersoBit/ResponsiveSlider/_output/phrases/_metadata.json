@@ -49,9 +49,9 @@
     },
     "option_explain.vbResponsiveSliderExtraInjection.txt": {
         "global_cache": false,
-        "version_id": 10000010,
-        "version_string": "1.0.0a0",
-        "hash": "e24f541d684909a58bfd5a101d61dcb6"
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "dfebfe115be4a921ab957eda657520dd"
     },
     "option_explain.vbResponsiveSliderPause.txt": {
         "global_cache": false,
@@ -107,12 +107,6 @@
         "version_string": "1.0.0a0",
         "hash": "8e59d2128f453ae54dc9c9c9f834fb12"
     },
-    "style_prop.vbResponsiveSliderCSSExtra.txt": {
-        "global_cache": false,
-        "version_id": 10000010,
-        "version_string": "1.0.0a0",
-        "hash": "d8e4d1f5e445107e505b2cf63a1fb65c"
-    },
     "style_prop.vbResponsiveSliderCSSFloatPosition.txt": {
         "global_cache": false,
         "version_id": 10000010,
@@ -148,12 +142,6 @@
         "version_id": 10000010,
         "version_string": "1.0.0a0",
         "hash": "61e335a092fd2c78bb837b07afc43744"
-    },
-    "style_prop_desc.vbResponsiveSliderCSSExtra.txt": {
-        "global_cache": false,
-        "version_id": 10000010,
-        "version_string": "1.0.0a0",
-        "hash": "a6f36e244c974c7277fe955afc75d6dc"
     },
     "style_prop_desc.vbResponsiveSliderCSSFloatPosition.txt": {
         "global_cache": false,

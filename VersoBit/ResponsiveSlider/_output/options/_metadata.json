@@ -1,20 +1,20 @@
 {
     "vbResponsiveSliderAnimationSpeed.json": {
-        "hash": "e08826d3c115335a06b3c44e7ea595e8"
+        "hash": "defb1fc2a0c2a8b1e20430b8b271e88b"
     },
     "vbResponsiveSliderAutoRotate.json": {
         "hash": "e22cb6b02a51e969d7250b2355ea36a9"
     },
     "vbResponsiveSliderExtraInjection.json": {
-        "hash": "ea59b01c9d2ec23eca5aa3ef02993798"
+        "hash": "abfedc58cde887d5e30e1ffb805b456d"
     },
     "vbResponsiveSliderPause.json": {
-        "hash": "e22cb6b02a51e969d7250b2355ea36a9"
+        "hash": "54779e370c9c57d06d5f596d939329ee"
     },
     "vbResponsiveSliderRandomizeSlides.json": {
-        "hash": "e22cb6b02a51e969d7250b2355ea36a9"
+        "hash": "171cd166ede2192f09435baf68ab2ffe"
     },
     "vbResponsiveSliderTransitionDelay.json": {
-        "hash": "b410c8a9ecef0c2d2ca3cbb4983a97b5"
+        "hash": "7eac655ad05a1e9412fb8bc77ac359e5"
     }
 }

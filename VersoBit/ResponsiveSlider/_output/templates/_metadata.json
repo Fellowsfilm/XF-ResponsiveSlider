@@ -1,12 +1,22 @@
 {
+    "public/_widget_vbResponsiveSlider.html": {
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "f6bb25a4fa91b52dc881bc0c065efb13"
+    },
     "public/vbResponsiveSlider.less": {
-        "version_id": 10000010,
-        "version_string": "1.0.0a0",
-        "hash": "e6e41f403d708846b3b71314cc2e499c"
+        "version_id": 10000012,
+        "version_string": "1.0.0a2",
+        "hash": "f9470ae7d86dbd302089d4f4581a6029"
     },
     "public/vbResponsiveSlider_extra.html": {
         "version_id": 10000010,
         "version_string": "1.0.0a0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "public/vbResponsiveSlider_extra.less": {
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
         "hash": "d41d8cd98f00b204e9800998ecf8427e"
     }
 }

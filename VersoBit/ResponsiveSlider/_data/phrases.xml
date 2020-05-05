@@ -8,8 +8,8 @@
   <phrase title="option.vbResponsiveSliderTransitionDelay" version_id="10000010" version_string="1.0.0a0"><![CDATA[Transition Delay]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderAnimationSpeed" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define how fast in milliseconds slide transitions should take.]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderAutoRotate" version_id="10000010" version_string="1.0.0a0"><![CDATA[Enable or disable the sliders automatic rotation.]]></phrase>
-  <phrase title="option_explain.vbResponsiveSliderExtraInjection" version_id="10000010" version_string="1.0.0a0"><![CDATA[Inject custom CSS/HTML into the slider frame. (useful for banners)</br>
-<i>Add HTML to template: 'vbResponsiveSlider_extra' | Add CSS to Style Properties</i>]]></phrase>
+  <phrase title="option_explain.vbResponsiveSliderExtraInjection" version_id="10000011" version_string="1.0.0a1"><![CDATA[Inject custom CSS/HTML into the slider frame. (useful for banners)</br>
+<i>Add HTML/CSS to templates: 'vbResponsiveSlider_extra' & 'vbResponsiveSlider_extra.less'</i>]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderPause" version_id="10000010" version_string="1.0.0a0"><![CDATA[Enable or disable automatic transitions on mouse hover.]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderRandomizeSlides" version_id="10000010" version_string="1.0.0a0"><![CDATA[Enable or disable slide randomization.]]></phrase>
   <phrase title="option_explain.vbResponsiveSliderTransitionDelay" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define how long it the slider should wait before transitioning to the next slide. </br><strong>Automatic Rotation must be enabled.</strong>]]></phrase>
@@ -19,14 +19,12 @@
   <phrase title="style_prop.vbResponsiveSliderCSSBorderRadius" version_id="10000010" version_string="1.0.0a0"><![CDATA[Border Radius]]></phrase>
   <phrase title="style_prop.vbResponsiveSliderCSSBoxShadow" version_id="10000010" version_string="1.0.0a0"><![CDATA[Container Box Shadow]]></phrase>
   <phrase title="style_prop.vbResponsiveSliderCSSContainerMargin" version_id="10000010" version_string="1.0.0a0"><![CDATA[Slider Container Margin Bottom]]></phrase>
-  <phrase title="style_prop.vbResponsiveSliderCSSExtra" version_id="10000010" version_string="1.0.0a0"><![CDATA[Extra CSS]]></phrase>
   <phrase title="style_prop.vbResponsiveSliderCSSFloatPosition" version_id="10000010" version_string="1.0.0a0"><![CDATA[Float Position]]></phrase>
   <phrase title="style_prop.vbResponsiveSliderCSSSlideHeight" version_id="10000010" version_string="1.0.0a0"><![CDATA[Slide Height]]></phrase>
   <phrase title="style_prop_desc.vbResponsiveSliderCSSBannerWidth" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define the width of the slider]]></phrase>
   <phrase title="style_prop_desc.vbResponsiveSliderCSSBorderRadius" version_id="10000010" version_string="1.0.0a0"><![CDATA[Set the border radius for the slider.]]></phrase>
   <phrase title="style_prop_desc.vbResponsiveSliderCSSBoxShadow" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define the box shadow for the container.]]></phrase>
   <phrase title="style_prop_desc.vbResponsiveSliderCSSContainerMargin" version_id="10000010" version_string="1.0.0a0"><![CDATA[Set the margin to your content below the slider container.]]></phrase>
-  <phrase title="style_prop_desc.vbResponsiveSliderCSSExtra" version_id="10000010" version_string="1.0.0a0"><![CDATA[Inject CSS for Custom HTML as defined in template: 'vbResponsiveSlider_extra'. Must be defined as entire classes, CSS will export to your live site, regardless of settings.]]></phrase>
   <phrase title="style_prop_desc.vbResponsiveSliderCSSFloatPosition" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define the default float position.]]></phrase>
   <phrase title="style_prop_desc.vbResponsiveSliderCSSSlideHeight" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define the slide height for images.]]></phrase>
   <phrase title="style_prop_group.vbResponsiveSlider" version_id="10000010" version_string="1.0.0a0"><![CDATA[[VersoBit] Responsive Slider]]></phrase>
