@@ -1,2 +1,2 @@
 Inject custom CSS/HTML into the slider frame. (useful for banners)</br>
-<i>Add HTML to template: 'vbResponsiveSlider_extra' | Add CSS to Style Properties</i>
+<i>Add HTML/CSS to templates: 'vbResponsiveSlider_extra' & 'vbResponsiveSlider_extra.less'</i>

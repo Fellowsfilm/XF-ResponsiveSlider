@@ -1,0 +1,32 @@
+<xf:css src="vbResponsiveSlider.less" />
+<xf:js src="VersoBit/responsiveslides.js" min="true" />
+<xf:js>
+$ (function() { $(".vbRespSlider").responsiveSlides({
+	auto: <xf:if is="$xf.options.vbResponsiveSliderAutoRotate">true<xf:else />false</xf:if>,
+	speed: {$xf.options.vbResponsiveSliderAnimationSpeed},
+	timeout: {$xf.options.vbResponsiveSliderTransitionDelay},
+	random: <xf:if is="$xf.options.vbResponsiveSliderRandomizeSlides">true<xf:else />false</xf:if>,
+	pause: <xf:if is="$xf.options.vbResponsiveSliderPause">true<xf:else />false</xf:if>,
+	pauseControls: true,
+	pager: false,
+	nav: false,
+} ); } );
+</xf:js>
+<div class="vbRespSlider-container">
+	<xf:if is="$xf.options.vbResponsiveSliderExtraInjection">
+		<xf:include template="vbResponsiveSlider_extra" />
+		<xf:css src="vbResponsiveSlider_extra.less" />
+	</xf:if>
+    <ul class="vbRespSlider">
+		<li>
+			<a href="https://fellowsfilm.com/threads/sotm-may-2020-space.11195/post-121415" target="_blank">
+				<img src="https://cdn.fellowsfilm.com/sotm/052020_sotm_1.jpg" alt="Ecronbuses and Ddogb's May 2020 SoTM Submission">
+			</a>
+		</li>
+		<li>
+			<a href="https://fellowsfilm.com/threads/sotm-may-2020-space.11195/post-122446" target="_blank">
+				<img src="https://cdn.fellowsfilm.com/sotm/052020_sotm_2.jpg" alt="THE PH6NT0MS's May 2020 SoTM Submission">
+			</a>
+		</li>
+    </ul>
+</div>
