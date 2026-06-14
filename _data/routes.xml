@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<routes/>
+<routes>
+  <route route_type="public" route_prefix="responsive-slider" controller="VersoBit\ResponsiveSlider:Manage"/>
+  <route route_type="public" route_prefix="tools" controller="VersoBit\ResponsiveSlider:Manage"/>
+</routes>

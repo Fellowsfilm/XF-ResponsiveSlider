@@ -1,0 +1,69 @@
+<xf:css src="vbResponsiveSlider.less" />
+
+<xf:if is="$slideCount > 1">
+	<xf:js src="VersoBit/responsiveslides.js" min="true" />
+	<xf:js>
+		jQuery(function($)
+		{
+			$('.vbRespSlider').responsiveSlides({
+				auto: <xf:if is="$xf.options.vbResponsiveSliderAutoRotate">true<xf:else />false</xf:if>,
+				speed: {$xf.options.vbResponsiveSliderAnimationSpeed},
+				timeout: {$xf.options.vbResponsiveSliderTransitionDelay},
+				random: <xf:if is="$xf.options.vbResponsiveSliderRandomizeSlides">true<xf:else />false</xf:if>,
+				pause: <xf:if is="$xf.options.vbResponsiveSliderPause">true<xf:else />false</xf:if>,
+				pauseControls: true,
+				pager: false,
+				nav: false
+			});
+		});
+	</xf:js>
+</xf:if>
+
+<div class="vbRespSlider-container{{ $slideCount == 1 ? ' vbRespSlider-container--single' : '' }}">
+	<xf:if is="$xf.options.vbResponsiveSliderExtraInjection">
+		<xf:include template="vbResponsiveSlider_extra" />
+		<xf:css src="vbResponsiveSlider_extra.less" />
+	</xf:if>
+
+	<xf:if is="$slideCount == 1">
+		<xf:foreach loop="$slides" value="$slide">
+			<xf:if is="$slide.link_url">
+				<xf:if is="$slide.open_new_window">
+					<a class="vbRespSlider-link" href="{$slide.link_url}" target="_blank" rel="noopener">
+						<xf:include template="vbResponsiveSlider_slide_image" />
+					</a>
+				<xf:else />
+					<a class="vbRespSlider-link" href="{$slide.link_url}">
+						<xf:include template="vbResponsiveSlider_slide_image" />
+					</a>
+				</xf:if>
+			<xf:else />
+				<span class="vbRespSlider-link">
+					<xf:include template="vbResponsiveSlider_slide_image" />
+				</span>
+			</xf:if>
+		</xf:foreach>
+	<xf:else />
+		<ul class="vbRespSlider">
+			<xf:foreach loop="$slides" value="$slide">
+				<li class="vbRespSlider-slide">
+					<xf:if is="$slide.link_url">
+						<xf:if is="$slide.open_new_window">
+							<a class="vbRespSlider-link" href="{$slide.link_url}" target="_blank" rel="noopener">
+								<xf:include template="vbResponsiveSlider_slide_image" />
+							</a>
+						<xf:else />
+							<a class="vbRespSlider-link" href="{$slide.link_url}">
+								<xf:include template="vbResponsiveSlider_slide_image" />
+							</a>
+						</xf:if>
+					<xf:else />
+						<span class="vbRespSlider-link">
+							<xf:include template="vbResponsiveSlider_slide_image" />
+						</span>
+					</xf:if>
+				</li>
+			</xf:foreach>
+		</ul>
+	</xf:if>
+</div>

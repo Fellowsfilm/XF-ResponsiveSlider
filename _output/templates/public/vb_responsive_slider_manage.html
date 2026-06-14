@@ -1,0 +1,77 @@
+<xf:title>Responsive slider</xf:title>
+<xf:css src="vbResponsiveSliderManage.less" />
+
+<xf:if is="$slides.count()">
+	<div class="block">
+		<div class="block-container">
+			<h2 class="block-header">Current slides</h2>
+			<div class="block-body vbResponsiveSliderManage-list">
+				<xf:foreach loop="$slides" value="$slide">
+					<div class="vbResponsiveSliderManage-slide">
+						<div class="vbResponsiveSliderManage-preview">
+							<xf:if is="$sliderRepo.getSlideImageUrl($slide)">
+								<img src="{$sliderRepo.getSlideImageUrl($slide)}" alt="{{ $slide.alt_text ?: $slide.title }}" loading="lazy" />
+							</xf:if>
+						</div>
+
+						<div class="vbResponsiveSliderManage-meta">
+							<strong><xf:if is="$slide.title">{$slide.title}<xf:else />Untitled slide</xf:if></strong>
+							<span>{{ $slide.active ? 'Active' : 'Disabled' }} &middot; Order {$slide.display_order}</span>
+							<xf:if is="$slide.link_url">
+								<a href="{$slide.link_url}" target="_blank" rel="noopener">{$slide.link_url}</a>
+							</xf:if>
+							<xf:if is="$slide.image_path">
+								<span>CDN path: {$slide.image_path}</span>
+							</xf:if>
+						</div>
+
+						<div class="vbResponsiveSliderManage-actions">
+							<xf:button href="{{ link('tools/responsive-slider/edit', null, {'slide_id': $slide.slide_id}) }}">Edit</xf:button>
+							<xf:form action="{{ link('tools/responsive-slider/delete') }}" class="u-inline">
+								<xf:hiddenval name="slide_id">{$slide.slide_id}</xf:hiddenval>
+								<xf:button type="submit" class="button--link" data-xf-click="confirm">Delete</xf:button>
+							</xf:form>
+						</div>
+					</div>
+				</xf:foreach>
+			</div>
+		</div>
+	</div>
+<xf:else />
+	<div class="blockMessage">No slides are configured yet.</div>
+</xf:if>
+
+<xf:form action="{{ link('tools/responsive-slider/save') }}" upload="true" class="block">
+	<div class="block-container">
+		<h2 class="block-header">{{ $isEdit ? 'Edit slide' : 'Add slide' }}</h2>
+		<div class="block-body">
+			<xf:if is="$isEdit">
+				<xf:hiddenval name="slide_id">{$editSlide.slide_id}</xf:hiddenval>
+			</xf:if>
+
+			<xf:textboxrow name="title" value="{$editSlide.title}" maxlength="150"
+				label="Title"
+				explain="Used internally and as fallback image alt text." />
+
+			<xf:textboxrow name="alt_text" value="{$editSlide.alt_text}" maxlength="255"
+				label="Image alt text"
+				explain="Describe what is shown in the image for accessibility and search previews. Example: 'Stagecoach bus at sunset on the OMSI map'. If left blank, the slide title is used as a fallback." />
+
+			<xf:textboxrow name="link_url" value="{$editSlide.link_url}" maxlength="500"
+				label="Link URL" />
+
+			<xf:uploadrow name="slider_image" accept=".gif,.jpeg,.jpg,.jpe,.png"
+				label="Upload image"
+				explain="Uploaded images are stored on the CDN with randomized filenames and optimized responsive sizes for desktop and mobile." />
+
+			<xf:numberboxrow name="display_order" value="{$editSlide.display_order}" min="0"
+				label="Display order" />
+
+			<xf:checkboxrow>
+				<xf:option name="active" selected="{$editSlide.active}">Active</xf:option>
+				<xf:option name="open_new_window" selected="{$editSlide.open_new_window}">Open link in new window</xf:option>
+			</xf:checkboxrow>
+		</div>
+		<xf:submitrow submit="{{ $isEdit ? 'Save slide' : 'Add slide' }}" />
+	</div>
+</xf:form>

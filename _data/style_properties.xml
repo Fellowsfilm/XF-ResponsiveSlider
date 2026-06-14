@@ -16,6 +16,6 @@
     <value>"left"</value>
   </style_property>
   <style_property property_name="vbResponsiveSliderCSSSlideHeight" group_name="vbResponsiveSlider" title="Slide Height" description="Define the slide height for images." property_type="value" value_type="string" display_order="0">
-    <value>"auto"</value>
+    <value>"450px"</value>
   </style_property>
 </style_properties>

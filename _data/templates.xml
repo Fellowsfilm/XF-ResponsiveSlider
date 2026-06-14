@@ -1,91 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="public" title="_widget_vbResponsiveSlider" version_id="10000012" version_string="1.0.0a2"><![CDATA[<xf:if is="$xf.options.vbResponsiveSliderStatus">
-	<xf:css src="vbResponsiveSlider.less" />
+  <template type="public" title="_widget_vbResponsiveSlider" version_id="10000100" version_string="1.0.1"><![CDATA[<xf:if is="$xf.options.vbResponsiveSliderStatus">
+	<xf:callback class="VersoBit\ResponsiveSlider\Template\Callback\Slider" method="render" />
+</xf:if>
+]]></template>
+  <template type="public" title="vbResponsiveSlider.less" version_id="10000100" version_string="1.0.1"><![CDATA[.vbRespSlider-container
+{
+	margin-bottom: @xf-vbResponsiveSliderCSSContainerMargin;
+	position: relative;
+	width: @xf-vbResponsiveSliderCSSBannerWidth;
+	height: @xf-vbResponsiveSliderCSSSlideHeight;
+	overflow: hidden;
+	box-shadow: @xf-vbResponsiveSliderCSSBoxShadow;
+	border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
+	background: @xf-contentBg;
+}
+
+.vbRespSlider,
+.vbRespSlider-slide,
+.vbRespSlider-link,
+.vbRespSlider-picture
+{
+	width: 100%;
+	height: 100%;
+}
+
+.vbRespSlider
+{
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border-radius: inherit;
+}
+
+.vbRespSlider-slide
+{
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+	border-radius: inherit;
+}
+
+.vbRespSlider-slide:first-child
+{
+	position: relative;
+	display: block;
+}
+
+.vbRespSlider-container--single .vbRespSlider-slide
+{
+	position: relative;
+	display: block;
+}
+
+.vbRespSlider-link,
+.vbRespSlider-picture,
+.vbRespSlider-image
+{
+	display: block;
+}
+
+.vbRespSlider-image
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 0;
+	border-radius: inherit;
+}
+
+@media (max-width: @xf-responsiveMedium)
+{
+	.vbRespSlider-container
+	{
+		height: clamp(210px, 52vw, @xf-vbResponsiveSliderCSSSlideHeight);
+	}
+}
+]]></template>
+  <template type="public" title="vbResponsiveSliderManage.less" version_id="10000100" version_string="1.0.1"><![CDATA[.vbResponsiveSliderManage-list
+{
+	display: grid;
+	gap: @xf-paddingMedium;
+}
+
+.vbResponsiveSliderManage-slide
+{
+	display: grid;
+	grid-template-columns: minmax(180px, 320px) 1fr auto;
+	gap: @xf-paddingMedium;
+	align-items: center;
+	padding: @xf-paddingMedium;
+	border-top: @xf-borderSize solid @xf-borderColor;
+}
+
+.vbResponsiveSliderManage-preview
+{
+	aspect-ratio: 16 / 7;
+	overflow: hidden;
+	border-radius: @xf-borderRadiusMedium;
+	background: @xf-contentAltBg;
+}
+
+.vbResponsiveSliderManage-preview img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.vbResponsiveSliderManage-meta
+{
+	display: grid;
+	gap: 4px;
+}
+
+.vbResponsiveSliderManage-actions
+{
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+@media (max-width: @xf-responsiveMedium)
+{
+	.vbResponsiveSliderManage-slide
+	{
+		grid-template-columns: 1fr;
+	}
+
+	.vbResponsiveSliderManage-actions
+	{
+		justify-content: flex-start;
+	}
+}
+]]></template>
+  <template type="public" title="vbResponsiveSlider_extra" version_id="10000010" version_string="1.0.0a0"><![CDATA[]]></template>
+  <template type="public" title="vbResponsiveSlider_extra.less" version_id="10000011" version_string="1.0.0a1"><![CDATA[]]></template>
+  <template type="public" title="vbResponsiveSlider_render" version_id="10000100" version_string="1.0.1"><![CDATA[<xf:css src="vbResponsiveSlider.less" />
+
+<xf:if is="$slideCount > 1">
 	<xf:js src="VersoBit/responsiveslides.js" min="true" />
 	<xf:js>
-	$ (function() { $(".vbRespSlider").responsiveSlides({
-		auto: <xf:if is="$xf.options.vbResponsiveSliderAutoRotate">true<xf:else />false</xf:if>,
-		speed: {$xf.options.vbResponsiveSliderAnimationSpeed},
-		timeout: {$xf.options.vbResponsiveSliderTransitionDelay},
-		random: <xf:if is="$xf.options.vbResponsiveSliderRandomizeSlides">true<xf:else />false</xf:if>,
-		pause: <xf:if is="$xf.options.vbResponsiveSliderPause">true<xf:else />false</xf:if>,
-		pauseControls: true,
-		pager: false,
-		nav: false,
-	} ); } );
+		jQuery(function($)
+		{
+			$('.vbRespSlider').responsiveSlides({
+				auto: <xf:if is="$xf.options.vbResponsiveSliderAutoRotate">true<xf:else />false</xf:if>,
+				speed: {$xf.options.vbResponsiveSliderAnimationSpeed},
+				timeout: {$xf.options.vbResponsiveSliderTransitionDelay},
+				random: <xf:if is="$xf.options.vbResponsiveSliderRandomizeSlides">true<xf:else />false</xf:if>,
+				pause: <xf:if is="$xf.options.vbResponsiveSliderPause">true<xf:else />false</xf:if>,
+				pauseControls: true,
+				pager: false,
+				nav: false
+			});
+		});
 	</xf:js>
-<div class="vbRespSlider-container">
+</xf:if>
+
+<div class="vbRespSlider-container{{ $slideCount == 1 ? ' vbRespSlider-container--single' : '' }}">
 	<xf:if is="$xf.options.vbResponsiveSliderExtraInjection">
 		<xf:include template="vbResponsiveSlider_extra" />
 		<xf:css src="vbResponsiveSlider_extra.less" />
 	</xf:if>
-    <ul class="vbRespSlider">
-		<li>
-			<a href="https://fellowsfilm.com/threads/sotm-may-2020-space.11195/post-121415" target="_blank">
-				<img src="https://cdn.fellowsfilm.com/sotm/052020_sotm_1.jpg" alt="Ecronbuses and Ddogb's May 2020 SoTM Submission">
-			</a>
-		</li>
-		<li>
-			<a href="https://fellowsfilm.com/threads/sotm-may-2020-space.11195/post-122446" target="_blank">
-				<img src="https://cdn.fellowsfilm.com/sotm/052020_sotm_2.jpg" alt="THE PH6NT0MS's May 2020 SoTM Submission">
-			</a>
-		</li>
-    </ul>
+
+	<xf:if is="$slideCount == 1">
+		<xf:foreach loop="$slides" value="$slide">
+			<xf:if is="$slide.link_url">
+				<xf:if is="$slide.open_new_window">
+					<a class="vbRespSlider-link" href="{$slide.link_url}" target="_blank" rel="noopener">
+						<xf:include template="vbResponsiveSlider_slide_image" />
+					</a>
+				<xf:else />
+					<a class="vbRespSlider-link" href="{$slide.link_url}">
+						<xf:include template="vbResponsiveSlider_slide_image" />
+					</a>
+				</xf:if>
+			<xf:else />
+				<span class="vbRespSlider-link">
+					<xf:include template="vbResponsiveSlider_slide_image" />
+				</span>
+			</xf:if>
+		</xf:foreach>
+	<xf:else />
+		<ul class="vbRespSlider">
+			<xf:foreach loop="$slides" value="$slide">
+				<li class="vbRespSlider-slide">
+					<xf:if is="$slide.link_url">
+						<xf:if is="$slide.open_new_window">
+							<a class="vbRespSlider-link" href="{$slide.link_url}" target="_blank" rel="noopener">
+								<xf:include template="vbResponsiveSlider_slide_image" />
+							</a>
+						<xf:else />
+							<a class="vbRespSlider-link" href="{$slide.link_url}">
+								<xf:include template="vbResponsiveSlider_slide_image" />
+							</a>
+						</xf:if>
+					<xf:else />
+						<span class="vbRespSlider-link">
+							<xf:include template="vbResponsiveSlider_slide_image" />
+						</span>
+					</xf:if>
+				</li>
+			</xf:foreach>
+		</ul>
+	</xf:if>
 </div>
-</xf:if>]]></template>
-  <template type="public" title="vbResponsiveSlider.less" version_id="10000012" version_string="1.0.0a2"><![CDATA[.vbRespSlider-container{
-  margin-bottom: @xf-vbResponsiveSliderCSSContainerMargin;
-  position: relative;
-  box-shadow: @xf-vbResponsiveSliderCSSBoxShadow;
-  border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-}
-.vbRespSlider {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: @xf-vbResponsiveSliderCSSBannerWidth;
-  padding: 0;
-  margin: 0;
-  border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  }
+]]></template>
+  <template type="public" title="vbResponsiveSlider_slide_image" version_id="10000100" version_string="1.0.1"><![CDATA[<picture class="vbRespSlider-picture">
+	<xf:if is="$sliderRepo.getSlideSrcset($slide)">
+		<img class="vbRespSlider-image"
+			src="{$sliderRepo.getSlideImageUrl($slide)}"
+			srcset="{$sliderRepo.getSlideSrcset($slide)}"
+			sizes="{$sliderRepo.getSlideSizes()}"
+			alt="{{ $slide.alt_text ?: $slide.title }}"
+			loading="{{ $slideCount == 1 ? 'eager' : 'lazy' }}"
+			decoding="async" />
+	<xf:else />
+		<img class="vbRespSlider-image"
+			src="{$sliderRepo.getSlideImageUrl($slide)}"
+			alt="{{ $slide.alt_text ?: $slide.title }}"
+			loading="{{ $slideCount == 1 ? 'eager' : 'lazy' }}"
+			decoding="async" />
+	</xf:if>
+</picture>
+]]></template>
+  <template type="public" title="vb_responsive_slider_manage" version_id="10000100" version_string="1.0.1"><![CDATA[<xf:title>Responsive slider</xf:title>
+<xf:css src="vbResponsiveSliderManage.less" />
 
-.vbRespSlider li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: @xf-vbResponsiveSliderCSSBannerWidth;
-  left: 0;
-  top: 0;
-  border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  }
+<xf:if is="$slides.count()">
+	<div class="block">
+		<div class="block-container">
+			<h2 class="block-header">Current slides</h2>
+			<div class="block-body vbResponsiveSliderManage-list">
+				<xf:foreach loop="$slides" value="$slide">
+					<div class="vbResponsiveSliderManage-slide">
+						<div class="vbResponsiveSliderManage-preview">
+							<xf:if is="$sliderRepo.getSlideImageUrl($slide)">
+								<img src="{$sliderRepo.getSlideImageUrl($slide)}" alt="{{ $slide.alt_text ?: $slide.title }}" loading="lazy" />
+							</xf:if>
+						</div>
 
-.vbRespSlider li:first-child {
-  position: relative;
-  display: block;
-  float: @xf-vbResponsiveSliderCSSFloatPosition;
-  }
+						<div class="vbResponsiveSliderManage-meta">
+							<strong><xf:if is="$slide.title">{$slide.title}<xf:else />Untitled slide</xf:if></strong>
+							<span>{{ $slide.active ? 'Active' : 'Disabled' }} &middot; Order {$slide.display_order}</span>
+							<xf:if is="$slide.link_url">
+								<a href="{$slide.link_url}" target="_blank" rel="noopener">{$slide.link_url}</a>
+							</xf:if>
+							<xf:if is="$slide.image_path">
+								<span>CDN path: {$slide.image_path}</span>
+							</xf:if>
+						</div>
 
-.vbRespSlider img {
-  display: block;
-  height: @xf-vbResponsiveSliderCSSSlideHeight;
-  float: @xf-vbResponsiveSliderCSSFloatPosition;
-  width: @xf-vbResponsiveSliderCSSBannerWidth;
-  border: 0;
-  border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-}]]></template>
-  <template type="public" title="vbResponsiveSlider_extra" version_id="10000010" version_string="1.0.0a0"><![CDATA[]]></template>
-  <template type="public" title="vbResponsiveSlider_extra.less" version_id="10000011" version_string="1.0.0a1"><![CDATA[]]></template>
+						<div class="vbResponsiveSliderManage-actions">
+							<xf:button href="{{ link('tools/responsive-slider/edit', null, {'slide_id': $slide.slide_id}) }}">Edit</xf:button>
+							<xf:form action="{{ link('tools/responsive-slider/delete') }}" class="u-inline">
+								<xf:hiddenval name="slide_id">{$slide.slide_id}</xf:hiddenval>
+								<xf:button type="submit" class="button--link" data-xf-click="confirm">Delete</xf:button>
+							</xf:form>
+						</div>
+					</div>
+				</xf:foreach>
+			</div>
+		</div>
+	</div>
+<xf:else />
+	<div class="blockMessage">No slides are configured yet.</div>
+</xf:if>
+
+<xf:form action="{{ link('tools/responsive-slider/save') }}" upload="true" class="block">
+	<div class="block-container">
+		<h2 class="block-header">{{ $isEdit ? 'Edit slide' : 'Add slide' }}</h2>
+		<div class="block-body">
+			<xf:if is="$isEdit">
+				<xf:hiddenval name="slide_id">{$editSlide.slide_id}</xf:hiddenval>
+			</xf:if>
+
+			<xf:textboxrow name="title" value="{$editSlide.title}" maxlength="150"
+				label="Title"
+				explain="Used internally and as fallback image alt text." />
+
+			<xf:textboxrow name="alt_text" value="{$editSlide.alt_text}" maxlength="255"
+				label="Image alt text"
+				explain="Describe what is shown in the image for accessibility and search previews. Example: 'Stagecoach bus at sunset on the OMSI map'. If left blank, the slide title is used as a fallback." />
+
+			<xf:textboxrow name="link_url" value="{$editSlide.link_url}" maxlength="500"
+				label="Link URL" />
+
+			<xf:uploadrow name="slider_image" accept=".gif,.jpeg,.jpg,.jpe,.png"
+				label="Upload image"
+				explain="Uploaded images are stored on the CDN with randomized filenames and optimized responsive sizes for desktop and mobile." />
+
+			<xf:numberboxrow name="display_order" value="{$editSlide.display_order}" min="0"
+				label="Display order" />
+
+			<xf:checkboxrow>
+				<xf:option name="active" selected="{$editSlide.active}">Active</xf:option>
+				<xf:option name="open_new_window" selected="{$editSlide.open_new_window}">Open link in new window</xf:option>
+			</xf:checkboxrow>
+		</div>
+		<xf:submitrow submit="{{ $isEdit ? 'Save slide' : 'Add slide' }}" />
+	</div>
+</xf:form>
+]]></template>
 </templates>

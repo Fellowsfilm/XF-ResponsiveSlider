@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <phrases>
+  <phrase title="nav.vbResponsiveSliderManage" version_id="10000100" version_string="1.0.1"><![CDATA[Slider]]></phrase>
   <phrase title="option.vbResponsiveSliderAnimationSpeed" version_id="10000010" version_string="1.0.0a0"><![CDATA[Animation Speed]]></phrase>
   <phrase title="option.vbResponsiveSliderAutoRotate" version_id="10000010" version_string="1.0.0a0"><![CDATA[Automatic Rotation]]></phrase>
   <phrase title="option.vbResponsiveSliderExtraInjection" version_id="10000010" version_string="1.0.0a0"><![CDATA[Enable Custom HTML/CSS Injection]]></phrase>
@@ -17,6 +18,7 @@
   <phrase title="option_explain.vbResponsiveSliderTransitionDelay" version_id="10000010" version_string="1.0.0a0"><![CDATA[Define how long it the slider should wait before transitioning to the next slide. </br><strong>Automatic Rotation must be enabled.</strong>]]></phrase>
   <phrase title="option_group.vbResponsiveSlider" version_id="10000010" version_string="1.0.0a0"><![CDATA[[VersoBit] Responsive Slider]]></phrase>
   <phrase title="option_group_description.vbResponsiveSlider" version_id="10000010" version_string="1.0.0a0"><![CDATA[Contains settings related to generating a slider on your forums landing page.]]></phrase>
+  <phrase title="permission.general_vbResponsiveSliderManage" version_id="10000100" version_string="1.0.1"><![CDATA[Manage responsive slider]]></phrase>
   <phrase title="style_prop.vbResponsiveSliderCSSBannerWidth" version_id="10000010" version_string="1.0.0a0"><![CDATA[Slider Width]]></phrase>
   <phrase title="style_prop.vbResponsiveSliderCSSBorderRadius" version_id="10000010" version_string="1.0.0a0"><![CDATA[Border Radius]]></phrase>
   <phrase title="style_prop.vbResponsiveSliderCSSBoxShadow" version_id="10000010" version_string="1.0.0a0"><![CDATA[Container Box Shadow]]></phrase>

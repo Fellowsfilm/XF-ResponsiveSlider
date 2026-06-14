@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation/>
+<navigation>
+  <navigation_entry navigation_id="vbResponsiveSliderManage" display_order="980" navigation_type_id="basic" enabled="0"><![CDATA[{"link":"{{ link('tools\/responsive-slider') }}","display_condition":"$xf.visitor.canManageResponsiveSlider()","extra_attributes":[]}]]></navigation_entry>
+</navigation>

@@ -1,52 +1,76 @@
-.vbRespSlider-container{
-  margin-bottom: @xf-vbResponsiveSliderCSSContainerMargin;
-  position: relative;
-  box-shadow: @xf-vbResponsiveSliderCSSBoxShadow;
-  border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
+.vbRespSlider-container
+{
+	margin-bottom: @xf-vbResponsiveSliderCSSContainerMargin;
+	position: relative;
+	width: @xf-vbResponsiveSliderCSSBannerWidth;
+	height: @xf-vbResponsiveSliderCSSSlideHeight;
+	overflow: hidden;
+	box-shadow: @xf-vbResponsiveSliderCSSBoxShadow;
+	border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
+	background: @xf-contentBg;
 }
-.vbRespSlider {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: @xf-vbResponsiveSliderCSSBannerWidth;
-  padding: 0;
-  margin: 0;
-  border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  }
 
-.vbRespSlider li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: @xf-vbResponsiveSliderCSSBannerWidth;
-  left: 0;
-  top: 0;
-  border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  }
+.vbRespSlider,
+.vbRespSlider-slide,
+.vbRespSlider-link,
+.vbRespSlider-picture
+{
+	width: 100%;
+	height: 100%;
+}
 
-.vbRespSlider li:first-child {
-  position: relative;
-  display: block;
-  float: @xf-vbResponsiveSliderCSSFloatPosition;
-  }
+.vbRespSlider
+{
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border-radius: inherit;
+}
 
-.vbRespSlider img {
-  display: block;
-  height: @xf-vbResponsiveSliderCSSSlideHeight;
-  float: @xf-vbResponsiveSliderCSSFloatPosition;
-  width: @xf-vbResponsiveSliderCSSBannerWidth;
-  border: 0;
-  border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -moz-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -webkit-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
-  -o-border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
+.vbRespSlider-slide
+{
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+	border-radius: inherit;
+}
+
+.vbRespSlider-slide:first-child
+{
+	position: relative;
+	display: block;
+}
+
+.vbRespSlider-container--single .vbRespSlider-slide
+{
+	position: relative;
+	display: block;
+}
+
+.vbRespSlider-link,
+.vbRespSlider-picture,
+.vbRespSlider-image
+{
+	display: block;
+}
+
+.vbRespSlider-image
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 0;
+	border-radius: inherit;
+}
+
+@media (max-width: @xf-responsiveMedium)
+{
+	.vbRespSlider-container
+	{
+		height: clamp(210px, 52vw, @xf-vbResponsiveSliderCSSSlideHeight);
+	}
 }

@@ -1,0 +1,58 @@
+.vbResponsiveSliderManage-list
+{
+	display: grid;
+	gap: @xf-paddingMedium;
+}
+
+.vbResponsiveSliderManage-slide
+{
+	display: grid;
+	grid-template-columns: minmax(180px, 320px) 1fr auto;
+	gap: @xf-paddingMedium;
+	align-items: center;
+	padding: @xf-paddingMedium;
+	border-top: @xf-borderSize solid @xf-borderColor;
+}
+
+.vbResponsiveSliderManage-preview
+{
+	aspect-ratio: 16 / 7;
+	overflow: hidden;
+	border-radius: @xf-borderRadiusMedium;
+	background: @xf-contentAltBg;
+}
+
+.vbResponsiveSliderManage-preview img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.vbResponsiveSliderManage-meta
+{
+	display: grid;
+	gap: 4px;
+}
+
+.vbResponsiveSliderManage-actions
+{
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+@media (max-width: @xf-responsiveMedium)
+{
+	.vbResponsiveSliderManage-slide
+	{
+		grid-template-columns: 1fr;
+	}
+
+	.vbResponsiveSliderManage-actions
+	{
+		justify-content: flex-start;
+	}
+}

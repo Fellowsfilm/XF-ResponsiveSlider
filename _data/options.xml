@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <options>
-  <option option_id="vbResponsiveSliderAnimationSpeed" edit_format="spinbox" data_type="positive_integer">
+  <option option_id="vbResponsiveSliderAnimationSpeed" edit_format="spinbox" data_type="positive_integer" advanced="0">
     <default_value>750</default_value>
     <relation group_id="vbResponsiveSlider" display_order="4"/>
-
   </option>
-  <option option_id="vbResponsiveSliderAutoRotate" edit_format="onoff" data_type="boolean">
+  <option option_id="vbResponsiveSliderAutoRotate" edit_format="onoff" data_type="boolean" advanced="0">
     <default_value>1</default_value>
     <relation group_id="vbResponsiveSlider" display_order="2"/>
   </option>
-  <option option_id="vbResponsiveSliderExtraInjection" edit_format="onoff" data_type="boolean">
+  <option option_id="vbResponsiveSliderExtraInjection" edit_format="onoff" data_type="boolean" advanced="0">
     <default_value>0</default_value>
     <relation group_id="vbResponsiveSlider" display_order="99"/>
   </option>
-  <option option_id="vbResponsiveSliderPause" edit_format="onoff" data_type="boolean">
+  <option option_id="vbResponsiveSliderPause" edit_format="onoff" data_type="boolean" advanced="0">
     <default_value>1</default_value>
     <relation group_id="vbResponsiveSlider" display_order="3"/>
   </option>
-  <option option_id="vbResponsiveSliderRandomizeSlides" edit_format="onoff" data_type="boolean">
+  <option option_id="vbResponsiveSliderRandomizeSlides" edit_format="onoff" data_type="boolean" advanced="0">
     <default_value>1</default_value>
     <relation group_id="vbResponsiveSlider" display_order="6"/>
   </option>
-  <option option_id="vbResponsiveSliderStatus" edit_format="onoff" data_type="boolean">
+  <option option_id="vbResponsiveSliderStatus" edit_format="onoff" data_type="boolean" advanced="0">
     <default_value>0</default_value>
     <relation group_id="vbResponsiveSlider" display_order="1"/>
   </option>
-  <option option_id="vbResponsiveSliderTransitionDelay" edit_format="spinbox" data_type="positive_integer">
+  <option option_id="vbResponsiveSliderTransitionDelay" edit_format="spinbox" data_type="positive_integer" advanced="0">
     <default_value>5000</default_value>
     <relation group_id="vbResponsiveSlider" display_order="5"/>
   </option>

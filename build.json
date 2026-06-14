@@ -1,8 +1,5 @@
 {
     "additional_files": [
         "js/VersoBit/"
-    ],
-    "minify": [
-        "js/VersoBit/responsiveslides.js"
     ]
 }

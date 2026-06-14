@@ -2,15 +2,15 @@
     "legacy_addon_id": "",
     "title": "[VersoBit] Responsive Slider",
     "description": "A lightweight, responsive, and customizable slider powered by the ResponsiveSlides.js framework.",
-    "version_id": 10000012,
-    "version_string": "1.0.0a2",
+    "version_id": 10000100,
+    "version_string": "1.0.1",
     "dev": "VersoBit",
-    "dev_url": "https://versobit.dev/",
-    "faq_url": "https://faq.versobit.dev/xf/ResponsiveSlider",
-    "support_url": "https://support.versobit.dev/",
+    "dev_url": "https://github.com/VersoBit",
+    "faq_url": "",
+    "support_url": "",
     "extra_urls": {
-        "Addon Page": "https://versobit.dev/xf/ResponsiveSlider",
-        "responsiveslides.js GitHub": "https://github.com/viljamis/ResponsiveSlides.js"
+        "GitHub Repo": "https://github.com/Fellowsfilm/XF-ResponsiveSlider",
+        "Report An Issue": "https://github.com/Fellowsfilm/XF-ResponsiveSlider/issues"
     },
     "require": {
         "XF": [

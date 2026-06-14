@@ -1,4 +1,10 @@
 {
+    "nav.vbResponsiveSliderManage.txt": {
+        "global_cache": false,
+        "version_id": 10000100,
+        "version_string": "1.0.1",
+        "hash": "1724b29f1a79247b4a88c9986ed47140"
+    },
     "option.vbResponsiveSliderAnimationSpeed.txt": {
         "global_cache": false,
         "version_id": 10000010,
@@ -57,7 +63,7 @@
         "global_cache": false,
         "version_id": 10000012,
         "version_string": "1.0.0a2",
-        "hash": "9533d238fe703a95246df24fd0e5db2d"
+        "hash": "491b704ea7c1c0ef486b80dc89feddd2"
     },
     "option_explain.vbResponsiveSliderPause.txt": {
         "global_cache": false,
@@ -94,6 +100,12 @@
         "version_id": 10000010,
         "version_string": "1.0.0a0",
         "hash": "5c23930d98c7b9b80d17e0996815760f"
+    },
+    "permission.general_vbResponsiveSliderManage.txt": {
+        "global_cache": false,
+        "version_id": 10000100,
+        "version_string": "1.0.1",
+        "hash": "94a437bc02c5fb2b36ca53d8943bae67"
     },
     "style_prop.vbResponsiveSliderCSSBannerWidth.txt": {
         "global_cache": false,

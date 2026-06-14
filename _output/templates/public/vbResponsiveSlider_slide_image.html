@@ -1,0 +1,17 @@
+<picture class="vbRespSlider-picture">
+	<xf:if is="$sliderRepo.getSlideSrcset($slide)">
+		<img class="vbRespSlider-image"
+			src="{$sliderRepo.getSlideImageUrl($slide)}"
+			srcset="{$sliderRepo.getSlideSrcset($slide)}"
+			sizes="{$sliderRepo.getSlideSizes()}"
+			alt="{{ $slide.alt_text ?: $slide.title }}"
+			loading="{{ $slideCount == 1 ? 'eager' : 'lazy' }}"
+			decoding="async" />
+	<xf:else />
+		<img class="vbRespSlider-image"
+			src="{$sliderRepo.getSlideImageUrl($slide)}"
+			alt="{{ $slide.alt_text ?: $slide.title }}"
+			loading="{{ $slideCount == 1 ? 'eager' : 'lazy' }}"
+			decoding="async" />
+	</xf:if>
+</picture>

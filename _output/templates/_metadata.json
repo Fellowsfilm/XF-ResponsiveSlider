@@ -1,13 +1,33 @@
 {
     "public/_widget_vbResponsiveSlider.html": {
-        "version_id": 10000012,
-        "version_string": "1.0.0a2",
-        "hash": "a078f36c122f5f12425f7e32f9f5e72a"
+        "version_id": 10000100,
+        "version_string": "1.0.1",
+        "hash": "36c4fb0284a2a00e4169db212e81f3eb"
     },
     "public/vbResponsiveSlider.less": {
-        "version_id": 10000012,
-        "version_string": "1.0.0a2",
-        "hash": "f9470ae7d86dbd302089d4f4581a6029"
+        "version_id": 10000100,
+        "version_string": "1.0.1",
+        "hash": "2077b916263e41243a85a8ba32b768d2"
+    },
+    "public/vbResponsiveSlider_render.html": {
+        "version_id": 10000100,
+        "version_string": "1.0.1",
+        "hash": "a8ba53660b58e751c12f8ff0dacd000f"
+    },
+    "public/vbResponsiveSlider_slide_image.html": {
+        "version_id": 10000100,
+        "version_string": "1.0.1",
+        "hash": "5e8b0377f2a37cf877fecec12de39f6c"
+    },
+    "public/vbResponsiveSliderManage.less": {
+        "version_id": 10000100,
+        "version_string": "1.0.1",
+        "hash": "d21b06b931287ab6e08a9ad30e3b8ee9"
+    },
+    "public/vb_responsive_slider_manage.html": {
+        "version_id": 10000100,
+        "version_string": "1.0.1",
+        "hash": "114e5882615273a11f2ac16c6b9ffd5c"
     },
     "public/vbResponsiveSlider_extra.html": {
         "version_id": 10000010,
