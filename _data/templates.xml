@@ -4,16 +4,20 @@
 	<xf:callback class="VersoBit\ResponsiveSlider\Template\Callback\Slider" method="render" />
 </xf:if>
 ]]></template>
-  <template type="public" title="vbResponsiveSlider.less" version_id="10000100" version_string="1.0.1"><![CDATA[.vbRespSlider-container
+  <template type="public" title="vbResponsiveSlider.less" version_id="10000200" version_string="1.0.2"><![CDATA[.vbRespSlider-container
 {
 	margin-bottom: @xf-vbResponsiveSliderCSSContainerMargin;
 	position: relative;
 	width: @xf-vbResponsiveSliderCSSBannerWidth;
-	height: @xf-vbResponsiveSliderCSSSlideHeight;
 	overflow: hidden;
 	box-shadow: @xf-vbResponsiveSliderCSSBoxShadow;
 	border-radius: @xf-vbResponsiveSliderCSSBorderRadius;
 	background: @xf-contentBg;
+}
+
+.vbRespSlider-container:not(.vbRespSlider-container--single)
+{
+	height: @xf-vbResponsiveSliderCSSSlideHeight;
 }
 
 .vbRespSlider,
@@ -57,6 +61,12 @@
 	display: block;
 }
 
+.vbRespSlider-container--single .vbRespSlider-link,
+.vbRespSlider-container--single .vbRespSlider-picture
+{
+	height: auto;
+}
+
 .vbRespSlider-link,
 .vbRespSlider-picture,
 .vbRespSlider-image
@@ -73,9 +83,15 @@
 	border-radius: inherit;
 }
 
+.vbRespSlider-container--single .vbRespSlider-image
+{
+	height: auto;
+	object-fit: contain;
+}
+
 @media (max-width: @xf-responsiveMedium)
 {
-	.vbRespSlider-container
+	.vbRespSlider-container:not(.vbRespSlider-container--single)
 	{
 		height: 52vw;
 		min-height: 210px;
